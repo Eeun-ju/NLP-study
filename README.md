@@ -1,5 +1,5 @@
 # NLP-study
-### 1. [성별분류]('/성별분류/GenderClassification.ipynb')  
+### 1. [성별분류]('성별분류/GenderClassification.ipynb')  
 **nltk** 는 파이썬으로 작성한 자연어 처리 도구 모음으로 텍스트에서 단어 빈도, 어휘 다양도 같은 정보를 쉽게 찾을 수 있다. 
 이미 알려진 사실인 **여성은 a,e,i로 끝나고 남성은 k,o,r,s,t 끝날 가능성이 크다** 라는 사실을 이용하여 분류를 진행한다.  
 나이브 베이즈 분류(Naive Bayes Classification)은 주로 텍스트 분류에 사용된다. 대표적으로 스팸 메일을 필터링하는 데 사용되고 있다.
