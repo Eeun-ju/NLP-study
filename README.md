@@ -29,3 +29,6 @@ KoNLPy에는 품사 태깅 패키지를 제공한다. **Kkma, Komoran, Hannanum,
 
 <h6> 참고자료 : https://pinkwink.kr/1025
 
+  ### [BERT(Bidirectional Encoder Represetations from Transformers)]  
+구글이 공개한 인공지능 언어모델 버트 공부(논문 분석 및 구현까지)
+<h6> 참고자료 : https://arxiv.org/abs/1810.04805 https://paul-hyun.github.io/bert-01/
