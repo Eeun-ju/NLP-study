@@ -31,5 +31,6 @@ KoNLPy에는 품사 태깅 패키지를 제공한다. **Kkma, Komoran, Hannanum,
 
   ### [BERT(Bidirectional Encoder Represetations from Transformers)]  
 구글이 공개한 인공지능 언어모델 버트 공부(논문 분석 및 구현까지)  
-BERT는 Transformer라는 모델에 기반한다. input Text를 받아 기본적으로 Attention 메커니즘을 통해, 인코딩, 디코딩하는 방식의 모델이다. 특이하게 Convolution, Recurrence도 사용하지 않는다. 따라서, LSTM+RNN 처럼 각 단위 워드 벡터가 시간의 연속성을 기억하고 있을 필요는 없다. 단어들의 상대적인 위치를 알아야 하기 때문에 Position encoding 단계가 추가되어 있다. 즉, 문장 내의 단어의 위치 벡터 값을 워드 임베딩 벡터에 추가해주는 거다. BERT는 Transformer 모델 중 인코더만 쓰는 형태이다. 이미 방대한 양의 Corpus(정보)를 이미 트레이닝 시킨 언어 처리 모델이다. 따라서 추가적으로 GPU, TPU를 사용하여 직접 돌릴 필요가 없다.( + 버트는 한 개 문장으로 적용부를 구성할 수 있고, 질의응답 같은 text pair로 구성할 수 있다. )
+BERT는 Transformer라는 모델에 기반한다. input Text를 받아 기본적으로 Attention 메커니즘을 통해, 인코딩, 디코딩하는 방식의 모델이다. 특이하게 Convolution, Recurrence도 사용하지 않는다. 따라서, LSTM+RNN 처럼 각 단위 워드 벡터가 시간의 연속성을 기억하고 있을 필요는 없다. 단어들의 상대적인 위치를 알아야 하기 때문에 Position encoding 단계가 추가되어 있다. 즉, 문장 내의 단어의 위치 벡터 값을 워드 임베딩 벡터에 추가해주는 거다. BERT는 Transformer 모델 중 인코더만 쓰는 형태이다. 이미 방대한 양의 Corpus(정보)를 이미 트레이닝 시킨 언어 처리 모델이다. 따라서 추가적으로 GPU, TPU를 사용하여 직접 돌릴 필요가 없다.( + 버트는 한 개 문장으로 적용부를 구성할 수 있고, 질의응답 같은 text pair로 구성할 수 있다. )  
+BERT는  두 가지 unsupervised task로 학습시킨 모델로, 첫번째 태스크는 Masked LM이다. 의도적으로 입력값의 특정 퍼센트의 랜덤 단어를 왜곡하는 기법으로 **80:10:10 = mask 매스킹:다른단어 치환:그대로 두기** 구성된다. 두번째 태스크는 Next Sentence Prediction(NSP)이다. 문장과 문장 간의 관계에 대한 부분으로 학습을 할 때 대량 Courpus에서 문장들을 이어 붙여 다음에 이어지는 문장인지, 아닌지를 판단한다. 
 <h6> 참고자료 : https://arxiv.org/abs/1810.04805 https://paul-hyun.github.io/bert-01/ https://brunch.co.kr/@yj5wqu/23
