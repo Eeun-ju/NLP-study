@@ -39,11 +39,11 @@ BERT는  두 가지 unsupervised task로 학습시킨 모델로, 첫번째 태�
  
  
 <h6> 참고자료 : https://arxiv.org/abs/1810.04805 https://paul-hyun.github.io/bert-01/ https://brunch.co.kr/@yj5wqu/23 https://moondol-ai.tistory.com/241
-<h6> 참고자료(네이버 영화 리뷰) : https://colab.research.google.com/drive/1tIf0Ugdqg4qT7gcxia3tL7und64Rv1dP#scrollTo=muU2kS2GCh4y http://yonghee.io/bert_binary_classification_naver/
+<h6> 참고자료(네이버 영화 리뷰) : https://colab.research.google.com/drive/1tIf0Ugdqg4qT7gcxia3tL7und64Rv1dP#scrollTo=muU2kS2GCh4y http://yonghee.io/bert_binary_classification_naver/  </h6>
   
   
-
-**개체명 인식(Named Entitiy Recognition)**
+  
+### 개체명 인식(Named Entitiy Recognition)
 NER이란 Named Entity를 Regognition하는 즉, 인식하는 작업을 말한다. 처음에는 NE는 문자열 내에서 기관명, 인물, 장소 뿐만 아니라 화페, 시간, 퍼센티지 표현까지 포괄하는 의미로 등장했다. 또한 명사라고도 정의하기도 했다.  
 논문 [A Survey on Deep Learning for Named Entity Recognition](https://arxiv.org/abs/1812.09449)에서는 NER을 아래와 같이 정의한다.  
 문자열 안에서 NE의 위치를 알아내고, 사전정의한 카테고리에 따라 알맞게 분류하는 작업(즉, 문자열을 입력으로 받아 단어별로 해당되는 태그를 내뱉게 하는 multi-class 분류 작업으로 성격을 정의할 수 있다.)  
