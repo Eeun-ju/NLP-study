@@ -51,9 +51,10 @@ NER이란 Named Entity를 Regognition하는 즉, 인식하는 작업을 말한�
 
  <h6> 참고자료 : https://wikidocs.net/30682 https://stellarway.tistory.com/29
   
-### 잠재 의미 분석 LSA(Latent Semantic Analysis)
+### [잠재 의미 분석 LSA(Latent Semantic Analysis)](LSA.ipynb) 
 sklearn에서 제공하는 Twenty Newsgroup 데이터를 사용하여 잠재 의미 분석을 해보자.  
 사용 데이터 : 20개의 다른 주제를 가진 뉴스그룹 데이터  
-기본적으로 TF-IDF는 단어의 빈도 수를 이용한 수치화 방법이기 때문에 단어의 의미를 고려하지 못한다는 단점이 있다. 이를 위한 대안으로 나온 방법은 잠재된 의미를 끌어내는 방법인 잠재 의미 분석이다. 
+기본적으로 TF-IDF는 단어의 빈도 수를 이용한 수치화 방법이기 때문에 단어의 의미를 고려하지 못한다는 단점이 있다. 이를 위한 대안으로 나온 방법은 잠재된 의미를 끌어내는 방법인 잠재 의미 분석이다.  
+n개의 문서를 m개의 단어로 표현된 입력 데이터 행렬 A를 SVD한 후 사용자가 임의로 정한 k를 이용하여 dim을 조정한다. A_k 행렬을 이용하여 문장 분석 
 
  <h6> 참고자료 : https://bkshin.tistory.com/entry/NLP-9-%EC%BD%94%EC%82%AC%EC%9D%B8-%EC%9C%A0%EC%82%AC%EB%8F%84%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%98%81%ED%99%94-%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C https://wikidocs.net/24949
