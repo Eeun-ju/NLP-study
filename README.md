@@ -50,3 +50,7 @@ NER이란 Named Entity를 Regognition하는 즉, 인식하는 작업을 말한�
 단어를 분류하는 작업으로 간단하게 말할 수 있고, NE를 두 가지의 유형으로 나눠볼 수 있다. 첫 번째는 generic NEs이다. 인물이나 장소의 명칭이 해당한다. 두 번째는 domain-specific NEs이다. 단백질, 효소, 유전자 등 전문 분야의 용어가 이에 해당한다.  
 
  <h6> 참고자료 : https://wikidocs.net/30682 https://stellarway.tistory.com/29
+  
+### 잠재 의미 분석 LSA(Latent Semantic Analysis)
+
+ <h6> 참고자료 : https://bkshin.tistory.com/entry/NLP-9-%EC%BD%94%EC%82%AC%EC%9D%B8-%EC%9C%A0%EC%82%AC%EB%8F%84%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%98%81%ED%99%94-%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C
